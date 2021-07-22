@@ -96,7 +96,7 @@ while running:
                 if bullet_status is "ready":
                     bullet_music = pygame.mixer.Sound('laser.wav')
                     pygame.mixer.Sound.play(bullet_music)
-                    pygame.mixer.Sound.set_volume(0.5)
+                    #pygame.mixer.Sound.set_volume(0.5)
                     bulletX = playerX
                     bulletY = playerY
                     bullet(playerX,playerY)
@@ -143,7 +143,7 @@ while running:
         if collide_bullet:
             collision_SOUND = pygame.mixer.Sound('explosion.wav')
             pygame.mixer.Sound.play(collision_SOUND)
-            pygame.mixer.Sound.set_volume(0.5)
+            #pygame.mixer.Sound.set_volume(0.5)
             bulletY = 550
             bullet_status = "ready"
             score += 1
@@ -157,7 +157,7 @@ while running:
             game_over_txt()
             game_over_sound = pygame.mixer.Sound('game_over.wav')
             pygame.mixer.Sound.play(game_over_sound)
-            pygame.mixer.Sound.set_volume(0.5)
+            #pygame.mixer.Sound.set_volume(0.5)
 
     player(playerX,playerY)
     score_p()
